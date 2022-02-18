@@ -1,0 +1,6 @@
+1. Локатор кнопки, которая лежит в диве со спаном с текстом "логин" 
+	//div[./span[text()='логин']]/button
+2. В каталоге онлайнер. Локатор чекбокса по названию товара.
+	//div[.//span[contains(text(), 'Samsung Galaxy')] and contains(@class, 'schema-product__group')]//label
+3. В каталоге онлайнер. Локатор всех имён товаров через часть описания.
+	//div[./span[contains(text(),'x')]]/preceding-sibling::div[@class='schema-product__title']//span
