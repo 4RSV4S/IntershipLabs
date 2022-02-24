@@ -23,7 +23,7 @@ namespace explicitWaitExample
 
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(int.MaxValue));
             IWebElement someElement = Driver.FindElement(By.Id("someID"));
-            string initialText = someElement.Text;
+            string initialText = someElement.GetAttribute("innerText");
 
             wait.Until<bool>((d) =>
             {
